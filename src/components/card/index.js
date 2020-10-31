@@ -1,7 +1,14 @@
 import React from 'react';
 
+import Players from './players';
+
 const Card = () => {
-  return <div>yo card</div>;
+  return (
+    <div>
+      <Players />
+      yo card
+    </div>
+  );
 };
 
 export default Card;
