@@ -1,0 +1,10 @@
+.navigation {
+  display: flex;
+  background-color: pink;
+  list-style: none;
+}
+
+.box {
+  margin: 5px;
+  border: 1px solid black;
+}
