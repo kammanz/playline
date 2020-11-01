@@ -24,11 +24,12 @@ const Players = () => {
     <ul className={styles.navigation}>
       {data.players.map((player, i) => (
         <li key={i} className={styles.box}>
-          <img className={styles.pic} src={hashTable.get(player.last_name)} />
-          {player.last_name}
-          <br />
-          {player.points}
-          <div>pts</div>
+          <div>
+            <img className={styles.pic} src={hashTable.get(player.last_name)} />
+          </div>
+          <div>{player.last_name}</div>
+          <div className={styles.points}>{player.points}</div>
+          <div className={styles.pointsText}>pts</div>
         </li>
       ))}
     </ul>
