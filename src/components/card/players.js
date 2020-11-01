@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
-import styles from './players.module.css';
-
 import hashTable from 'assets/headshots/headshots';
+import styles from './players.module.scss';
 
 console.log('hashTable: ', hashTable);
 

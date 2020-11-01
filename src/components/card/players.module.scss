@@ -1,0 +1,28 @@
+@import 'src/scss/variables.scss';
+
+@font-face {
+  font-family: 'morganPost';
+  // src: url('src/assets/fonts/FontsFree-Net-SFProDisplay-Light.ttf')
+  // format('truetype');
+  src: url('/assets/fonts/MorganPosterAvecRegular.otf');
+}
+
+.navigation {
+  display: flex;
+  background-color: $greyBackground;
+  list-style: none;
+  font-family: 'morganPost';
+}
+
+.box {
+  margin: 5px;
+  border: 1px solid black;
+  font-family: 'morganPost';
+}
+
+.pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: $headshotBorder;
+}
