@@ -1,0 +1,27 @@
+@import 'src/scss/variables.scss';
+
+.container {
+  align-self: center;
+  text-transform: uppercase;
+
+  color: green;
+  background: $navy2;
+}
+
+.navItem {
+  padding: 0 10px;
+  color: $grey2b;
+  text-decoration: none;
+}
+
+.navItem:after {
+  content: '';
+  padding: 0 8px;
+  border-right: 1px solid $grey2b;
+  color: $grey2b;
+  font-size: 12px;
+}
+
+.navItem:last-child::after {
+  border: none;
+}
