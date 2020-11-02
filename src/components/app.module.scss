@@ -1,4 +1,5 @@
 @import 'src/scss/variables.scss';
+
 @font-face {
   font-family: 'sfPro';
   src: url('/assets/fonts/FontsFree-Net-SFProDisplay-Light.ttf');
@@ -18,4 +19,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.logoContainer {
+  height: 100px;
+  width: 100px;
+
+  .logo {
+    // display: inline-block;
+    width: 100%;
+    margin: auto;
+  }
 }

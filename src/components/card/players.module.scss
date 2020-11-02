@@ -2,8 +2,7 @@
 
 ul {
   display: flex;
-  width: 80%;
-  margin-left: -80px;
+  justify-content: center;
   list-style: none;
   text-transform: uppercase;
   color: $grey3;

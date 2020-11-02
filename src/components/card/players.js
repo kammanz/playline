@@ -23,7 +23,10 @@ const Players = () => {
   return (
     <ul className={styles.container}>
       {data.players.map((player, i) => (
-        <li key={i} style={{ zIndex: 10 - i }} className={styles.box}>
+        <li
+          key={i}
+          style={{ zIndex: data.players.length - i }}
+          className={styles.box}>
           <div className={styles.imageBackground}>
             <img className={styles.pic} src={hashTable.get(player.last_name)} />
           </div>
