@@ -2,12 +2,11 @@
 
 ul {
   display: flex;
-  background-color: $greyBackground;
+  width: 80%;
+  margin-left: -80px;
   list-style: none;
   text-transform: uppercase;
-  color: $nameColor;
-  width: 80%;
-  border-radius: 10px;
+  color: $grey3;
 }
 
 .box {
@@ -23,7 +22,7 @@ ul {
 }
 
 .imageBackground {
-  background: $greyBackground;
+  background: $grey1;
   height: 100px;
   width: 100px;
   border-radius: 39%;
@@ -49,14 +48,14 @@ ul {
   height: 30px;
   font-size: 20px;
   font-family: 'morganPost';
-  color: $pointsColor;
+  color: $charcoal;
   background: $white;
   border-radius: 50%;
-  border: 3px double $pointsBorderColor;
-  // border-image-source: linear-gradient(to left, $nameColor, $pointsBorderColor);
+  border: 3px double $grey2;
+  // border-image-source: linear-gradient(to left, $grey3, $grey2);
   font-weight: bold;
   position: relative;
-  // box-shadow: 0px 0px 2px $nameColor;
+  // box-shadow: 0px 0px 2px $grey3;
 }
 
 // .points:before {
