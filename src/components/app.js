@@ -3,12 +3,11 @@ import React from 'react';
 import Card from './card/index';
 import Nav from './nav/nav';
 
-import './app.scss';
+import styles from './app.module.scss';
 
 const App = () => {
   return (
-    <div classname={'jojo'}>
-      app for playline 2
+    <div className={styles.container}>
       <Card />
       <Nav />
     </div>

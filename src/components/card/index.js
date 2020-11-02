@@ -2,11 +2,12 @@ import React from 'react';
 
 import Players from './players';
 
+import styles from './index.module.scss';
+
 const Card = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Players />
-      yo card
     </div>
   );
 };

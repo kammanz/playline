@@ -1,11 +1,13 @@
 @import 'src/scss/variables.scss';
 
-.container {
+ul {
   display: flex;
   background-color: $greyBackground;
   list-style: none;
   text-transform: uppercase;
   color: $nameColor;
+  width: 80%;
+  border-radius: 10px;
 }
 
 .box {
@@ -18,17 +20,10 @@
   text-align: center;
   margin: 5px;
   margin-left: -10px;
-  // border: 1px solid black;
 }
-
-// .box:first-child {
-//   z-index: 100;
-//   background: green;
-// }
 
 .imageBackground {
   background: $greyBackground;
-  // background: pink;
   height: 100px;
   width: 100px;
   border-radius: 39%;
