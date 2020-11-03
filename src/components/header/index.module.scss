@@ -8,3 +8,10 @@
     margin: auto;
   }
 }
+
+@media all and (max-width: 500px) {
+  .container {
+    width: 234px;
+    margin-top: 60px;
+  }
+}
