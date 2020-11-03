@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // width: 30%;
   margin: 26px auto;
   padding: 18px 2% 22px;
   border-radius: 18px;
@@ -13,8 +12,6 @@
   text-transform: uppercase;
 
   .progress {
-    // margin-top: 20px;
-
     img {
       width: 53%;
     }
@@ -45,8 +42,6 @@
   }
 
   .proTip {
-    // align-self: center;
-    // width: 80%;
     margin: 12px 11px;
     color: $grey3;
     font-size: 13px;
@@ -108,16 +103,43 @@
 @media all and (max-width: 500px) {
   .container {
     width: 355px;
+
+    .success {
+      font-size: 30px;
+    }
+
+    .deposit {
+      button {
+        padding: 3px 9px;
+        font-size: 12px;
+      }
+    }
   }
 }
 
-@media all and (max-width: 1080px) {
+@media all and (max-width: 400px) {
   .container {
-    // width: 42%;
-  }
+    width: 305px;
 
-  .proTip {
-    // align-self: center;
-    // width: 80%;
+    .success {
+      font-size: 28px;
+    }
+
+    .gameTime {
+      font-size: 18px;
+    }
+
+    .deposit {
+      button {
+        padding: 3px 9px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 350px) {
+  .container {
+    width: 285px;
   }
 }

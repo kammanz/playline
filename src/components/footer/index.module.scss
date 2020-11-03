@@ -1,13 +1,15 @@
 @import 'src/scss/variables.scss';
 
 nav {
-  margin: 32px auto 85px;
+  margin: 25px auto 85px;
+  padding-top: 0 5px;
   background: $navy2;
   text-transform: uppercase;
 }
 
 .navItem {
   margin-left: 10px;
+  padding-top: 7px;
   color: $grey2b;
   font-family: 'sfProLight';
   font-size: 11px;
@@ -24,4 +26,26 @@ nav {
 
 .navItem:last-child::after {
   border: none;
+}
+
+@media all and (max-width: 500px) {
+  nav {
+    margin: 9px auto 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // padding: 0 40px;
+    background: #012044;
+    text-transform: uppercase;
+
+    .navItem {
+      font-size: 10px;
+    }
+  }
+}
+
+@media all and (max-width: 400px) {
+  nav {
+    margin-top: 7px;
+  }
 }

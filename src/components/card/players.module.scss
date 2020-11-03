@@ -81,9 +81,16 @@ ul {
   ul {
     padding: 0 5%;
   }
+}
 
-  .proTip {
-    // align-self: center;
-    // width: 80%;
+@media all and (max-width: 400px) {
+  ul {
+    .box {
+      flex: 1 1 60px;
+    }
+
+    .imageBackground {
+      align-self: center;
+    }
   }
 }
