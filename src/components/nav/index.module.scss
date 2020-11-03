@@ -2,15 +2,16 @@
 
 .container {
   align-self: center;
+  margin-top: 32px;
   text-transform: uppercase;
-
-  color: green;
   background: $navy2;
 }
 
 .navItem {
   padding: 0 10px;
   color: $grey2b;
+  font-family: 'sfProLight';
+  font-size: 11px;
   text-decoration: none;
 }
 
@@ -19,7 +20,7 @@
   padding: 0 8px;
   border-right: 1px solid $grey2b;
   color: $grey2b;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .navItem:last-child::after {

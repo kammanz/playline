@@ -9,7 +9,7 @@ const Nav = () => {
       <BrowserRouter>
         <Route>
           <NavLink className={styles.navItem} to="/about">
-            <span>About</span>
+            About
           </NavLink>
         </Route>
         <Route>
