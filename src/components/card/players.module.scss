@@ -3,41 +3,39 @@
 ul {
   display: flex;
   justify-content: center;
-  list-style: none;
   margin-top: 18px;
-  text-transform: uppercase;
+  padding: 0;
   color: $grey3;
+  list-style: none;
+  text-transform: uppercase;
 }
 
 .box {
   display: flex;
-  flex-basis: 0;
-  flex-grow: 1;
   flex-direction: column;
   justify-content: center;
-  max-width: 100px;
-  text-align: center;
-  margin: 5px;
-  margin-left: -10px;
+  margin-left: -2px;
 }
 
 .imageBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: $grey1;
-  height: 44px;
-  width: 44px;
-  border-radius: 39%;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
 }
 
 .pic {
-  height: 44px;
-  width: 44px;
+  width: 100%;
   border-radius: 50%;
   border: $headshotBorder;
 }
 
 .playerName {
-  margin: 10px 5px 5px;
-  font-size: 11px;
+  margin: 10px 0 5px;
+  font-size: 10px;
   font-family: 'sfProLight';
 }
 
