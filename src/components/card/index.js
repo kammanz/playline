@@ -35,8 +35,8 @@ const Card = () => {
           <img src={deposit} />
           <span>Deposit</span>
         </button>
-        <div className={styles.lineDeposit} />
       </div>
+      <div className={styles.lineDeposit} />
       <div className={styles.download}>Download the app</div>
       <div className={styles.appLinks}>
         <a

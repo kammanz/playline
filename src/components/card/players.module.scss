@@ -94,3 +94,11 @@ ul {
     }
   }
 }
+
+@media all and (max-width: 300px) {
+  ul {
+    .box {
+      flex: 1 1 50px;
+    }
+  }
+}

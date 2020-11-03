@@ -131,7 +131,7 @@
 
     .deposit {
       button {
-        padding: 3px 9px;
+        padding: 6px 9px;
         font-size: 12px;
       }
     }
@@ -141,5 +141,41 @@
 @media all and (max-width: 350px) {
   .container {
     width: 285px;
+
+    .success {
+      font-size: 26px;
+    }
+
+    .gameTime {
+      font-size: 17px;
+    }
+  }
+}
+
+@media all and (max-width: 320px) {
+  .container {
+    width: 93%;
+
+    .deposit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      font-size: 10px;
+
+      img {
+        height: 14px;
+      }
+
+      span {
+        font-size: 10px;
+      }
+    }
   }
 }
