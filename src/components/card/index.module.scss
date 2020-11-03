@@ -4,15 +4,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 35%;
+  // width: 30%;
   margin: 26px auto;
+  padding: 18px 2% 22px;
   border-radius: 18px;
   background: $grey1;
   text-align: center;
   text-transform: uppercase;
 
   .progress {
-    margin-top: 20px;
+    // margin-top: 20px;
 
     img {
       width: 53%;
@@ -44,7 +45,9 @@
   }
 
   .proTip {
-    margin-top: 12px;
+    // align-self: center;
+    // width: 80%;
+    margin: 12px 11px;
     color: $grey3;
     font-size: 13px;
     font-family: 'sfProLight';
@@ -55,7 +58,7 @@
   .deposit {
     button {
       margin: 0 10px;
-      padding: 7px 14px;
+      padding: 6px 14px;
       border: 1px solid $grey2;
       border-radius: 25px 25px 25px 25px;
       box-shadow: 0px 0px 1px $grey2;
@@ -91,11 +94,30 @@
   }
 
   .appLinks {
-    margin: 18px auto 21px;
+    margin: 18px auto 0px;
 
     a {
       height: 32px;
       margin: 0 11px;
     }
+  }
+}
+
+// Media queries
+
+@media all and (max-width: 500px) {
+  .container {
+    width: 355px;
+  }
+}
+
+@media all and (max-width: 1080px) {
+  .container {
+    // width: 42%;
+  }
+
+  .proTip {
+    // align-self: center;
+    // width: 80%;
   }
 }

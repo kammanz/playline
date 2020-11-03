@@ -20,7 +20,7 @@ const Players = () => {
   const playersLength = data.players.length;
 
   return (
-    <ul className={styles.container}>
+    <ul>
       {data.players.map((player, i) => (
         <li
           key={i}
