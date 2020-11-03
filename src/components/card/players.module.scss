@@ -24,6 +24,7 @@ ul {
   width: 46px;
   height: 46px;
   border-radius: 50%;
+  box-shadow: 1px -2px 1px $grey2;
   background: $grey1;
 }
 
@@ -39,6 +40,17 @@ ul {
   font-size: 10px;
 }
 
+.pointsContainer {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border: 1px solid $grey2;
+  border-radius: 50%;
+  background: $grey1b;
+}
+
 .points {
   position: relative;
   display: flex;
@@ -47,7 +59,7 @@ ul {
   align-self: center;
   width: 26px;
   height: 26px;
-  border: 3px double $grey2;
+  border: 1px solid $grey2;
   border-radius: 50%;
   background: $white;
   color: $charcoal;
