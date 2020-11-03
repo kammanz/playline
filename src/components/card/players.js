@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import hashTable from 'assets/headshots/headshots';
+import hashTable from 'assets/headshots';
 import styles from './players.module.scss';
-
-console.log('hashTable: ', hashTable);
 
 const Players = () => {
   const [data, setData] = useState({ players: [] });
@@ -13,7 +11,6 @@ const Players = () => {
       const result = await axios(
         'https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json'
       );
-      console.log('result: ', result.data.players);
       setData(result.data);
     };
 

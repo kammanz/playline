@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Card from './card';
-import Nav from './nav';
+import Footer from './footer';
 import Header from './header';
 
 import styles from './app.module.scss';
@@ -11,7 +11,7 @@ const App = () => {
     <div className={styles.container}>
       <Header />
       <Card />
-      <Nav />
+      <Footer />
     </div>
   );
 };

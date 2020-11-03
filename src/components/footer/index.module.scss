@@ -1,14 +1,13 @@
 @import 'src/scss/variables.scss';
 
-.container {
-  align-self: center;
+nav {
   margin: 32px auto 85px;
-  text-transform: uppercase;
   background: $navy2;
+  text-transform: uppercase;
 }
 
 .navItem {
-  padding: 0 10px;
+  margin-left: 10px;
   color: $grey2b;
   font-family: 'sfProLight';
   font-size: 11px;
@@ -17,7 +16,7 @@
 
 .navItem:after {
   content: '';
-  padding: 0 8px;
+  padding-right: 10px;
   border-right: 1px solid $grey2b;
   color: $grey2b;
   font-size: 11px;

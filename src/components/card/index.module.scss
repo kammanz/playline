@@ -2,14 +2,14 @@
 
 .container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   width: 35%;
   margin: 26px auto;
   border-radius: 18px;
+  background: $grey1;
   text-align: center;
   text-transform: uppercase;
-  background: $grey1;
 
   .progress {
     margin-top: 20px;
@@ -29,7 +29,7 @@
 
   .gameTime {
     margin-top: 8px;
-    color: $grey3b;
+    color: $grey3;
     font-family: 'morganPost';
     font-size: 19px;
     font-weight: bold;
@@ -37,8 +37,8 @@
 
   .lineGameTime {
     width: 47%;
-    padding-top: 12px;
     margin: auto;
+    padding-top: 12px;
     border-bottom: 1px solid $grey3b;
     opacity: 0.2;
   }
@@ -46,10 +46,10 @@
   .proTip {
     margin-top: 12px;
     color: $grey3;
-    text-align: center;
-    text-transform: none;
     font-size: 13px;
     font-family: 'sfProLight';
+    text-align: center;
+    text-transform: none;
   }
 
   .deposit {
@@ -61,10 +61,10 @@
       box-shadow: 0px 0px 1px $grey2;
       background-color: $white;
       color: $grey3;
-      text-transform: uppercase;
       font-weight: bold;
-      cursor: pointer;
+      text-transform: uppercase;
       outline: none;
+      cursor: pointer;
 
       span {
         padding-left: 10px;
@@ -76,8 +76,8 @@
 
   .lineDeposit {
     width: 45%;
-    padding-top: 19px;
     margin: auto;
+    padding-top: 19px;
     border-bottom: 1px solid $grey2;
     opacity: 0.4;
   }

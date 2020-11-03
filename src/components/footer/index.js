@@ -3,9 +3,9 @@ import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 
 import styles from './index.module.scss';
 
-const Nav = () => {
+const Footer = () => {
   return (
-    <div className={styles.container}>
+    <nav>
       <BrowserRouter>
         <Route>
           <NavLink className={styles.navItem} to="/about">
@@ -43,8 +43,8 @@ const Nav = () => {
           </NavLink>
         </Route>
       </BrowserRouter>
-    </div>
+    </nav>
   );
 };
 
-export default Nav;
+export default Footer;
