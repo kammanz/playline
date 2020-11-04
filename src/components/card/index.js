@@ -49,7 +49,7 @@ const Card = () => {
           href="https://play.google.com/store"
           target="_blank"
           rel="noreferrer">
-          <img src={google} />
+          <img src={google} alt="google play store" />
         </a>
       </div>
     </div>

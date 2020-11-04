@@ -4,24 +4,24 @@ import hashTable from 'assets/headshots';
 import styles from './players.module.scss';
 
 const Players = () => {
-  const [data, setData] = useState({ players: [] });
+  const [players, setPlayers] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
         'https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json'
       );
-      setData(result.data);
+      setPlayers(result.data.players);
     };
 
     fetchData();
   }, []);
 
-  const playersLength = data.players.length;
+  const playersLength = players.length;
 
   return (
     <ul>
-      {data.players.map((player, i) => (
+      {players.map((player, i) => (
         <li
           key={i}
           style={{ zIndex: playersLength - i }}
