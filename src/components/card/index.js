@@ -14,7 +14,7 @@ const Card = () => {
   return (
     <div className={styles.container}>
       <div className={styles.progress}>
-        <img src={progress} />
+        <img src={progress} alt="full progress bar" />
       </div>
       <div className={styles.success}>Your PlayLine is set!</div>
       <div className={styles.gameTime}>
@@ -28,11 +28,11 @@ const Card = () => {
       <Players />
       <div className={styles.deposit}>
         <button>
-          <img src={notifyMe} />
+          <img src={notifyMe} alt="notification bell" />
           <span>Notify Me</span>
         </button>
         <button>
-          <img src={deposit} />
+          <img src={deposit} alt="money bag" />
           <span>Deposit</span>
         </button>
       </div>
@@ -41,10 +41,14 @@ const Card = () => {
       <div className={styles.appLinks}>
         <a
           href="https://apps.apple.com/ca/app/playline/id1265657853"
-          target="_blank">
-          <img src={apple} />
+          target="_blank"
+          rel="noreferrer">
+          <img src={apple} alt="apple store button" />
         </a>
-        <a href="https://play.google.com/store" target="_blank">
+        <a
+          href="https://play.google.com/store"
+          target="_blank"
+          rel="noreferrer">
           <img src={google} />
         </a>
       </div>

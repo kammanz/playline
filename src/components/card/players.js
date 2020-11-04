@@ -27,7 +27,11 @@ const Players = () => {
           style={{ zIndex: playersLength - i }}
           className={styles.box}>
           <div className={styles.imageBackground}>
-            <img className={styles.pic} src={hashTable.get(player.last_name)} />
+            <img
+              className={styles.pic}
+              src={hashTable.get(player.last_name)}
+              alt="player headshot"
+            />
           </div>
           <div className={styles.playerName}>{player.last_name}</div>
           <div className={styles.pointsContainer}>
