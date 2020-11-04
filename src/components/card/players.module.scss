@@ -11,7 +11,7 @@ ul {
   text-transform: uppercase;
 }
 
-.box {
+.player {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,17 +36,17 @@ ul {
 }
 
 .playerName {
-  margin: 10px 0 5px;
+  margin: 10px 0;
   font-family: 'sfProLight';
   font-size: 10px;
 }
 
 .pointsContainer {
-  width: 30px;
-  height: 30px;
   display: flex;
   justify-content: center;
   align-self: center;
+  width: 30px;
+  height: 30px;
   border: 1px solid $grey2;
   border-radius: 50%;
   background: $grey1b;
@@ -72,7 +72,7 @@ ul {
 .pointsText {
   margin: 4px;
   font-family: 'sfProLight';
-  font-size: 11px;
+  font-size: 10px;
   font-weight: bold;
   text-align: center;
 }
@@ -85,7 +85,7 @@ ul {
 
 @media all and (max-width: 400px) {
   ul {
-    .box {
+    .player {
       flex: 1 1 60px;
     }
 
@@ -97,7 +97,7 @@ ul {
 
 @media all and (max-width: 300px) {
   ul {
-    .box {
+    .player {
       flex: 1 1 50px;
     }
   }

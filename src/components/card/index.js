@@ -2,11 +2,11 @@ import React from 'react';
 
 import Players from './players';
 
-import apple from 'assets/icons/ios-app.svg';
-import google from 'assets/icons/google-play.svg';
-import notifyMe from 'assets/icons/notify-me.svg';
-import progress from 'assets/icons/progress.svg';
-import deposit from 'assets/icons/money-bag.svg';
+import AppleSVG from 'assets/icons/ios-app.svg';
+import GoogleSVG from 'assets/icons/google-play.svg';
+import NotifyMeSVG from 'assets/icons/notify-me.svg';
+import ProgressSVG from 'assets/icons/progress.svg';
+import DepositSVG from 'assets/icons/money-bag.svg';
 
 import styles from './index.module.scss';
 
@@ -14,7 +14,7 @@ const Card = () => {
   return (
     <div className={styles.container}>
       <div className={styles.progress}>
-        <img src={progress} alt="full progress bar" />
+        <img src={ProgressSVG} alt="full progress bar" />
       </div>
       <div className={styles.success}>Your PlayLine is set!</div>
       <div className={styles.gameTime}>
@@ -28,11 +28,11 @@ const Card = () => {
       <Players />
       <div className={styles.deposit}>
         <button>
-          <img src={notifyMe} alt="notification bell" />
+          <img src={NotifyMeSVG} alt="notification bell" />
           <span>Notify Me</span>
         </button>
         <button>
-          <img src={deposit} alt="money bag" />
+          <img src={DepositSVG} alt="money bag" />
           <span>Deposit</span>
         </button>
       </div>
@@ -43,13 +43,13 @@ const Card = () => {
           href="https://apps.apple.com/ca/app/playline/id1265657853"
           target="_blank"
           rel="noreferrer">
-          <img src={apple} alt="apple store button" />
+          <img src={AppleSVG} alt="apple store button" />
         </a>
         <a
           href="https://play.google.com/store"
           target="_blank"
           rel="noreferrer">
-          <img src={google} alt="google play store" />
+          <img src={GoogleSVG} alt="google play store" />
         </a>
       </div>
     </div>

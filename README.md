@@ -30,7 +30,7 @@ yarn lint:fix
 
 - [React](https://reactjs.org/) - The JS framework used
 - [Axios](https://github.com/axios/axios) - Promise based HTTP client
-- [CSS Modules](https://github.com/css-modules/css-modules) - CSS processing
+- [CSS Modules](https://github.com/css-modules/css-modules) - CSS processing using SCSS
 
 ### Authors
 

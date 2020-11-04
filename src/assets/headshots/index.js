@@ -16,4 +16,6 @@ hashTable.set('Lowry', lowry);
 hashTable.set('Davis', davis);
 hashTable.set('Siakam', siakam);
 
-export default hashTable;
+export const getImage = (key) => {
+  return hashTable.get(key);
+};

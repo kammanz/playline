@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import hashTable from 'assets/headshots';
+import { getImage } from 'assets/headshots';
 import styles from './players.module.scss';
 
 const Players = () => {
@@ -9,7 +9,7 @@ const Players = () => {
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
-        'https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json'
+        'https://cors-anywhere.herokuapp.com/https://playline-dev-test.s3-us-west-2.amazonaws.com/playline-test.json'
       );
       setPlayers(result.data.players);
     };
@@ -17,25 +17,23 @@ const Players = () => {
     fetchData();
   }, []);
 
-  const playersLength = players.length;
-
   return (
     <ul>
-      {players.map((player, i) => (
+      {players.map(({ last_name, points }, i) => (
         <li
           key={i}
-          style={{ zIndex: playersLength - i }}
-          className={styles.box}>
+          style={{ zIndex: players.length - i }}
+          className={styles.player}>
           <div className={styles.imageBackground}>
             <img
               className={styles.pic}
-              src={hashTable.get(player.last_name)}
+              src={getImage(last_name)}
               alt="player headshot"
             />
           </div>
-          <div className={styles.playerName}>{player.last_name}</div>
+          <div className={styles.playerName}>{last_name}</div>
           <div className={styles.pointsContainer}>
-            <div className={styles.points}>{player.points}</div>
+            <div className={styles.points}>{points}</div>
           </div>
           <div className={styles.pointsText}>Pts</div>
         </li>

@@ -1,51 +1,39 @@
 @import 'src/scss/variables.scss';
 
-nav {
+.container {
   margin: 25px auto 85px;
   padding-top: 0 5px;
-  background: $navy2;
   text-transform: uppercase;
-}
 
-.navItem {
-  margin-left: 10px;
-  padding-top: 7px;
-  color: $grey2b;
-  font-family: 'sfProLight';
-  font-size: 11px;
-  text-decoration: none;
-}
+  a {
+    padding: 0 7px;
+    border-right: 1px solid $grey2b;
+    color: $grey2b;
+    font-family: 'sfProLight';
+    font-size: 11px;
+    text-decoration: none;
 
-.navItem:after {
-  content: '';
-  padding-right: 10px;
-  border-right: 1px solid $grey2b;
-  color: $grey2b;
-  font-size: 11px;
-}
-
-.navItem:last-child::after {
-  border: none;
+    &:last-child {
+      border-right: none;
+    }
+  }
 }
 
 @media all and (max-width: 500px) {
-  nav {
+  .container {
     margin: 9px auto 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // padding: 0 40px;
-    background: #012044;
-    text-transform: uppercase;
 
-    .navItem {
+    a {
       font-size: 10px;
     }
   }
 }
 
 @media all and (max-width: 400px) {
-  nav {
+  .container {
     margin-top: 7px;
   }
 }
