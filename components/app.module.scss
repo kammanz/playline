@@ -1,0 +1,37 @@
+@import 'src/scss/variables.scss';
+
+@font-face {
+  font-family: 'sfPro';
+  src: url('/assets/fonts/FontsFree-Net-SFProDisplay-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'sfProLight';
+  src: url('/assets/fonts/FontsFree-Net-SFProDisplay-Light.ttf');
+}
+
+@font-face {
+  font-family: 'sfProBold';
+  src: url('/assets/fonts/FontsFree-Net-SFProDisplay-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'morganPost';
+  src: url('/assets/fonts/MorganPosterAvecRegular.otf');
+}
+
+@font-face {
+  font-family: 'morganPostBold';
+  src: url('/assets/fonts/MorganPosterAvecBold.otf');
+}
+
+body {
+  background: $navy;
+  font-family: 'sfPro';
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

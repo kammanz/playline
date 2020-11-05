@@ -1,0 +1,179 @@
+@import 'src/scss/variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 26px auto;
+  padding: 18px 2% 22px;
+  border-radius: 18px;
+  background: $grey1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.progress {
+  img {
+    width: 53%;
+  }
+}
+
+.success {
+  margin-top: 18px;
+  color: $charcoal;
+  font-family: 'morganPostBold';
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.gameTime {
+  margin-top: 8px;
+  color: $grey3;
+  font-family: 'morganPost';
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.lineGameTime {
+  width: 47%;
+  margin: auto;
+  padding-top: 12px;
+  border-bottom: 1px solid $grey3;
+  opacity: 0.2;
+}
+
+.proTip {
+  margin: 12px 11px;
+  color: $grey3;
+  font-size: 13px;
+  font-family: 'sfProLight';
+  text-align: center;
+  text-transform: none;
+}
+
+.deposit {
+  button {
+    margin: 0 10px;
+    padding: 6px 14px;
+    border: 1px solid $grey2;
+    border-radius: 25px;
+    box-shadow: 0px 0px 1px $grey2;
+    background-color: $white;
+    color: $grey3;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+
+    span {
+      padding-left: 10px;
+      vertical-align: super;
+      font-weight: 200;
+    }
+  }
+}
+
+.lineDeposit {
+  width: 45%;
+  margin: auto;
+  padding-top: 19px;
+  border-bottom: 1px solid $grey2;
+  opacity: 0.4;
+}
+
+.download {
+  margin-top: 14px;
+  color: $grey3;
+  font-family: 'sfProBold';
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.appLinks {
+  margin: 18px auto 0px;
+
+  a {
+    height: 32px;
+    margin: 0 11px;
+  }
+}
+
+// Media queries
+
+@media all and (max-width: 500px) {
+  .container {
+    width: 355px;
+  }
+
+  .success {
+    font-size: 30px;
+  }
+
+  .deposit {
+    button {
+      padding: 3px 9px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media all and (max-width: 400px) {
+  .container {
+    width: 305px;
+  }
+
+  .success {
+    font-size: 28px;
+  }
+
+  .gameTime {
+    font-size: 18px;
+  }
+
+  .deposit {
+    button {
+      padding: 6px 9px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media all and (max-width: 350px) {
+  .container {
+    width: 285px;
+  }
+
+  .success {
+    font-size: 26px;
+  }
+
+  .gameTime {
+    font-size: 17px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .container {
+    width: 93%;
+  }
+
+  .deposit,
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    width: 100px;
+    font-size: 10px;
+
+    img {
+      height: 14px;
+    }
+
+    span {
+      font-size: 10px;
+    }
+  }
+}

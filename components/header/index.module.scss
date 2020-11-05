@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  align-self: center;
+  width: 263px;
+  margin-top: 80px;
+}
+
+.logo {
+  width: 100%;
+  margin: auto;
+}
+
+@media all and (max-width: 500px) {
+  .container {
+    width: 234px;
+    margin-top: 60px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .container {
+    margin-top: 45px;
+  }
+}
